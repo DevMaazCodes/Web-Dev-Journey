@@ -1,0 +1,8 @@
+There are a few core web vitals we should always keep in mind, because this helps us optimise our website
+1.Cumulative Layout Shift- The shifting of web layout due to sudden load of content, on way to fix this is giving specific width and height to images making the browser reserve spaces for large images
+2.Longest Contextual Paint- In simple words, it is the time taken to load the largest piece/data in a website
+3.First Input delay- The delay between user input and browser processing starting is FID
+We can use a simple lighthouse tool in browser to analyse these factors.
+SEO (Search Engine Optimisations) Tips
+1.Set a sensible and related title in meta data
+2.Use the desc attribute to set description of website
