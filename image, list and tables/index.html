@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying Images,Tables and Lists</title>
+</head>
+
+<body>
+    <!--We will be displaying images using the img tag, it has multiple attributes such as width, height and two mandatory attributes i.e src and alt, src stands for source, alt is the text given when pic can't be fetched from server, the height and widhth are in pixels(px), we dont write px in attributes-->
+    <img src="reem.png" alt="reem" height="340" width="">
+    <!--It's not madatory to set both height and width, we can skip it or set either/both-->
+    <br /><!--using br tag tp break line-->
+    <!--We will use the table tag to make table-->
+    <table>
+        <caption> <!--using caption tag to give caption-->
+            Random Table
+        </caption>
+        <thead> <!--using thead to create table header and tfoot for footer-->
+            <!--Using tr tag to create a new table row-->
+            <tr>
+                <!--Using th to create table  heading-->
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <!--Using tbody to group the body part of the table-->
+               <!--using td to fill table data-->
+                <td rowspan="2"> <!--using colspan to set the no. of coloumns used, by default its 1-->
+                    Big
+                </td>
+                <td colspan="2"><!--using rowspan to set the no. of row used, by default its 1-->
+                    67
+                </td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--using td to fill table data-->
+                <td > 
+                    Maaz
+                </td>
+                <td>
+                    18
+                </td>
+
+            </tr>
+        </tfoot>
+    </table>
+    <!--now we will make a list, there are 3types of list, ordered(ol tag), unordered(ul tag) and descriptive (dl tag)-->
+    
+
+</body>
+
+</html>
