@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We will be learning form and input tags">
+    <title>Learning Forms</title>
+</head>
+
+<body>
+    <h1>Form for stupid people</h1>
+    <!--usin form tag to create form, there are 2 attributes to it, method i.e post or get and action i.e where to submit the data-->
+    <form method="post">
+        <!--using input tag to retrieve info, there are various input type other than the few below. Using label tag to label the input and in label we use custom id inside for attribute to make the label interactive for a particular input. The attributes in input tags are below which do the same work as their name suggests, the id's must be unique to each input-->
+        <label for="username">Please enter your username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" autofocus /><br />
+        <label for="password">Enter your password</label>
+        <input type="password" name="password" id="password"> </br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br />
+        <label for="subscription">Subscribe to my stupidness</label>
+        <input type="checkbox" id="subscription" name="consent" value="yes"><br>
+        <!--Below is an example of textarea, it is used to take a multiline answer or something which isn't objective-->
+        <label for="thoughts">Enter your thoughts</label> <br>
+        <textarea rows="4" cols="67" name="thoughts" id="thoughts"></textarea><br>
+        <label for="subject">Choose your favourite subject</label>
+        <select name="fav subject" id="subject">
+            <option value="maths">Maths</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="physics">Physics</option>
+        </select>
+    </form>
+</body>
+
+</html>
