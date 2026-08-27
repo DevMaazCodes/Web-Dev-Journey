@@ -1,0 +1,14 @@
+#firstspan{ /*id is referred with a # in css*/
+    color: blue;
+    background-color: white;
+}
+.red-text{ /*class is referred with a . in css*/
+    color:red;
+    background-color: yellow;
+}
+.red-text.yellow-bg{ /*we can combine multiple classes*/
+    background-color: green;
+}
+.yellow-bg{
+    background-color: blue;
+}
