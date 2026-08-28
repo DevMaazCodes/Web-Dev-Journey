@@ -12,8 +12,6 @@
     <!--Like the img tag we can use video tag to display video, also we can set various attributes of a video as done below, i removed the autoplay attribute as it was pretty annoying-->
     <video controls muted aloop width="699" height="800" poster="reem.png"
         src="https://www.papytane.com/mp4/accrobra.mp4"></video>
-
-
     <!--We also have an audio tag which have similar attributes to video tag but there's an extra attribute known as preload having values none metadata and auto. If set to none the browser will not preload any data leading to slower loading time, metadata means it will preload basic info, in auto it preloads the entire audio-->
     <audio src="Hum Pyaar Karne Wale - NaaSongsHD.mp3" controls loop preload="metadata" muted></audio>
     <!--For images we also use a svg (Scalable vector graphics) tag where we can customise our images, also we can create high definintion vector images using svg-->
@@ -21,6 +19,10 @@
     <svg height="30" width="30">
         <rect width="30" height="30" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
     </svg>
+    <!--This is displaying external svg using img tag for this in our svg file we need to use namespace declaration-->
+    <img src="img.svg" alt="img">
+    <!--We will use iframe to embed another website in our website, yt has its own embedding feature
+    -->
 </body>
 
 </html>
