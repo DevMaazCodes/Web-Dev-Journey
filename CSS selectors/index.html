@@ -8,15 +8,19 @@
     <meta name="description" content="We will learn about selectors and its use in CSS">
     <style>
         /*First type of selector is element selector which means selecting an entire type of element. It's drawback is that all the declaration under one selector will be applied to every use of element. Below is an example of element selector*/
-        div {
+        div{
             background-color: red;
         }
-        /*The second selector is class selector which means select a particular class to style, all the elements with that class will have the effects of the declaration, example below*/
-        .red{
-            color:red;
-        }
-        .yellow-bg{
+
+        /*The second selector is class selector which means we select a particular class to style, all the elements with that class will have the effects of the declaration, example below*/
+        .red, .yellow-bg {
+            color: red;
             background-color:yellow;
+        }
+
+        /*The third selector is id selector which means select an id of an element to style, the element with that id will have the effects of the declaration, example below*/
+        #yellow{
+            color:yellow;
         }
     </style>
 </head>
@@ -26,8 +30,11 @@
         This is a div
     </div>
     <span class="red yellow-bg">
-This is a span
+        This is a span
     </span>
+    <p id="yellow">
+        This is a paragraph
+    </p>
 </body>
 
 </html>
