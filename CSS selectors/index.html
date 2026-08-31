@@ -8,42 +8,77 @@
     <meta name="description" content="We will learn about selectors and its use in CSS">
     <style>
         /*First type of selector is element selector which means selecting an entire type of element. It's drawback is that all the declaration under one selector will be applied to every use of element. Below is an example of element selector*/
-        div{
+        div {
             background-color: red;
         }
 
         /*The second selector is class selector which means we select a particular class to style, all the elements with that class will have the effects of the declaration, example below*/
-        .red, .yellow-bg {
+        .red,
+        .yellow-bg {
             color: red;
-            background-color:yellow;
+            background-color: yellow;
         }
 
         /*The third selector is id selector which means select an id of an element to style, the element with that id will have the effects of the declaration, example below*/
-        #yellow{
-            color:yellow;
+        #yellow {
+            color: yellow;
         }
+
         /*The fourth selector is child selector which means if an element1 is a direct child of element2 (i.e element1 directly falls under element2  without any in-between) the declarations will apply. Below is an example where a 'p' is a child of a 'main'*/
-        main>p{
-            color:blue;
-            background-color:yellow;
+        main>p {
+            color: blue;
+            background-color: yellow;
         }
+
         /*The fifth selector is descendant selector which means if an element1 is a descendant of element2 (i.e element1 directly or indirectly falls under element2 which means in betweens doesn't matter) the declarations will apply. Below is an example where a 'article' is a descendant of a 'main'*/
-        main article{
-            color:white;
-            background-color:black;
+        main article {
+            color: white;
+            background-color: black;
         }
+
         /*The sixth selector is universal selector, using which the declaration applies to ALL the elements, it is represented by '*'  */
-        *{
-            margin:0;
-            padding:0;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*There are some pseudo selectors written as element:selector few important ones are below*/
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:hover {
+            color: aqua;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        p:first-child {
+            /*These declarations will only apply if p i.e paragraph is the first child of an element (i.e p is the first tag used within an element)*/
+            background-color: aqua;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        This is a div
-    </div>
+    <section>
+        <div>
+            <p>
+                Am a first child of div
+            </p>
+            <p>
+                Am a second child div
+            </p>
+            This is a div
+        </div>
+    </section>
+
     <span class="red yellow-bg">
         This is a span
     </span>
@@ -53,11 +88,12 @@
     <main>
         <p>
             Am a child of main
-            <article>
-                Am a descendant of main
-            </article>
+        <article>
+            Am a descendant of main
+        </article>
         </p>
     </main>
+    <a href="https://www.facebook.com">Google</a>
 </body>
 
 </html>
