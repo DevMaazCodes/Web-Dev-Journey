@@ -27,6 +27,16 @@
             color:blue;
             background-color:yellow;
         }
+        /*The fifth selector is descendant selector which means if an element1 is a descendant of element2 (i.e element1 directly or indirectly falls under element2 which means in betweens doesn't matter) the declarations will apply. Below is an example where a 'article' is a descendant of a 'main'*/
+        main article{
+            color:white;
+            background-color:black;
+        }
+        /*The sixth selector is universal selector, using which the declaration applies to ALL the elements, it is represented by '*'  */
+        *{
+            margin:0;
+            padding:0;
+        }
     </style>
 </head>
 
@@ -43,6 +53,9 @@
     <main>
         <p>
             Am a child of main
+            <article>
+                Am a descendant of main
+            </article>
         </p>
     </main>
 </body>
