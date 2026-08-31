@@ -22,6 +22,11 @@
         #yellow{
             color:yellow;
         }
+        /*The fourth selector is child selector which means if an element1 is a direct child of element2 (i.e element1 directly falls under element2  without any in-between) the declarations will apply. Below is an example where a 'p' is a child of a 'main'*/
+        main>p{
+            color:blue;
+            background-color:yellow;
+        }
     </style>
 </head>
 
@@ -35,6 +40,11 @@
     <p id="yellow">
         This is a paragraph
     </p>
+    <main>
+        <p>
+            Am a child of main
+        </p>
+    </main>
 </body>
 
 </html>
