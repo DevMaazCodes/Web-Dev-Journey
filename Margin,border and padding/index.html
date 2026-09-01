@@ -10,25 +10,45 @@
         * {
             /*Using universal selector to reset browser's default padding, margin and border*/
             margin: 0;
-            padding:0;
+            padding: 0;
             border: 0;
         }
 
         .box {
-            color:yellow;
+            color: yellow;
             background-color: red;
-            margin:90px;
-            padding:90px;
-            border:30px solid blue; /*It is mandatory to specify the type of style to a border like I wrote solid and then gave color blue*/
-            
-            
+            margin: 90px;
+            padding: 40px;
+            border: 30px solid blue;
+            /*It is mandatory to specify the type of style to a border like I wrote solid and then gave color blue*/
+            height: 200px;
+            box-sizing: border-box;
+            /*We used the box-sizing property and gave value border-box, this makes the above 200px height include the padding and border too in 200px and adjust the content height accordingly, without this declaration the content height itself would be 200px excluding the border and padding*/
+
+
+        }
+
+        .box2 {
+            color: black;
+            background-color: red;
+            margin: 100px; 
+            padding: 40px;
+            border: 30px solid blue;
+            height: 200px;
+            box-sizing: border-box;
         }
     </style>
 </head>
 
 <body>
     <div class="box">
-        This is a box model, which consists if three things. The padding,border and margin. The margin is the outermost layer under which there is a border and the innermost is padding. The margin is not the part of element so background is not retained under margin but in padding and border bg is retained though border has it's own color too.
+        This is a box model, which consists if three things. The padding,border and margin. The margin is the outermost
+        layer under which there is a border and the innermost is padding. The margin is not the part of element so
+        background is not retained under margin but in padding and border bg is retained though border has it's own
+        color too.
+    </div>
+    <div class="box2">
+        This is another box
     </div>
 </body>
 
