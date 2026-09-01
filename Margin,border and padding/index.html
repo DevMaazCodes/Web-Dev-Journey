@@ -10,20 +10,23 @@
         * {
             /*Using universal selector to reset browser's default padding, margin and border*/
             margin: 0;
-            padding: 0;
+            padding:0;
             border: 0;
         }
 
         .box {
             color:yellow;
             background-color: red;
+            margin:90px;
+            
+            
         }
     </style>
 </head>
 
 <body>
     <div class="box">
-        This is a box model, which consists if three things. The padding,border and margin. The margin is the outermost layer under which there is a border and the innermost is padding. The margin is not the part of element so background is not retained under margin but in padding and border bg is retained
+        This is a box model, which consists if three things. The padding,border and margin. The margin is the outermost layer under which there is a border and the innermost is padding. The margin is not the part of element so background is not retained under margin but in padding and border bg is retained though border has it's own color too.
     </div>
 </body>
 
