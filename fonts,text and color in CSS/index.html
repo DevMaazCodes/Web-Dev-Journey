@@ -8,18 +8,30 @@
     <meta name="description" content="We will learn about different properties and text styles in CSS">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
         /*We can import external fonts using google fonts like i did, we can import multipe fonts at once, here i imported open sans and Caacupe one*/
-        p {
+        span {
 
             font-family: "Caacupe One" sans-serif;
             font-style: italic;
             font-weight: bolder;
-            text-decoration: overline dotted 9px aqua; /*Text decoration has its own attributes like line type eg.solid,wavy,dashed, thickness in this case 9px and color, these can also be written seperately, eg:text-decoration-color, instead of color we can write any property*/
-            text-transform: capitalize;/*The text transform has multiple values, like lowercase,uppercase and capitalize*/
-            font-size:small;
-            line-height:4;
-            letter-spacing:2px; /*We can use line height and letter spacing properties for spaces between lines and letters respectively*/
+            text-decoration: overline dotted 9px aqua;
+            /*Text decoration has its own attributes like line type eg.solid,wavy,dashed, thickness in this case 9px and color, these can also be written seperately, eg:text-decoration-color, instead of color we can write any property*/
+            text-transform: capitalize;
+            /*The text transform has multiple values, like lowercase,uppercase and capitalize which capitalize the first letter of every word*/
+            font-size: small;
+            line-height: 4;
+            letter-spacing: 2px;
+            /*We can use line height and letter spacing properties for spaces between lines and letters respectively*/
+            text-indent: 79px;
+            /*The text indent property adds more space aside from margin AT THE STARTING OF ELEMENT/TEXT*/
 
+        }
+        p{
+            width: 20px;
+            border:10px solid red;
+            text-overflow: ellipsis;
+            overflow:hidden; /*If we hide the overflow we can choose what happens to the text when it breaks ie the width is filled */
         }
     </style>
 </head>
@@ -29,10 +41,13 @@
         <h1>
             Font styles
         </h1>
-        <p>
-            This is a sample text and it's font is changed by using font-family property in CSS and it is made itaic
+        <span>
+            this is a sample text and it's font is changed by using font-family property in CSS and it is made itaic
             using font-style property and made bold using font-weight and there's a line over it made by using text
             decoration property and text is small using font-size property
+        </span>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, necessitatibus enim iusto doloribus consectetur debitis, laborum cum accusantium itaque non a, ipsam aliquid. Praesentium tempore ipsa culpa, omnis cumque veritatis? Laudantium dolorum illum nisi maxime omnis commodi earum voluptatibus nam, laborum impedit accusamus accusantium, non debitis quia ullam, placeat obcaecati beatae est. Consequatur, incidunt labore a deserunt mollitia facilis tempora. Magni ratione similique aut, cum nisi maxime, dolore, et vero non excepturi debitis! Quis, at nostrum obcaecati reprehenderit facere, illum, itaque inventore recusandae libero mollitia dolorem. Totam, veniam iusto?
         </p>
     </div>
 </body>
