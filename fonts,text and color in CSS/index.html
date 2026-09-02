@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font, teXt styles and color</title>
     <meta name="description" content="We will learn about different properties and text styles in CSS">
     <style>
-        p{
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        @import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        /*We can import external fonts using google fonts like i did, we can import multipe fonts at once, here i imported open sans and Caacupe one*/
+        p {
+
+            font-family: "Caacupe One" sans-serif;
             font-style: italic;
-            font-weight:bolder;
+            font-weight: bolder;
             text-decoration: overline;
+            font-size:small;
         }
     </style>
 </head>
+
 <body>
     <div>
         <h1>
             Font styles
         </h1>
         <p>
-            This is a sample text and it's font is changed by using font-family property in CSS and it is made itaic using font-style property and made bold using font-weight and there's a line over it made by using text decoration property
+            This is a sample text and it's font is changed by using font-family property in CSS and it is made itaic
+            using font-style property and made bold using font-weight and there's a line over it made by using text
+            decoration property and text is small using font-size property
         </p>
     </div>
 </body>
+
 </html>
