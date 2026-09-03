@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS RULES FOR STYLING</title>
+    <style>
+        h1{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rules for styling and collisions</h1>
+    <div>
+        <ol>
+            <li>Position-CSS treats styling from top to bottom i.e if 2 styles have the same specificity CSS will apply the one at the very bottom</li>
+            <li>Specificity-CSS gives more importance to some selectors than others, the order is inline-1000>id-100>class/attribute/pseudo-class-10>element-1>universal-0, each selector has its own specificity value which I mention along with selector. We can add specificity of different selectors for complex selectors, the highest specificity one will be applied unless something is important.</li>
+            <li>Origin-The browser defaut styling is overridden by the author's styling, so the origin of style matters.</li>
+            <li>we can use !important to give importance to a particular declaration which will override all the others.</li>
+        </ol>
+    </div>
+</body>
+</html>
