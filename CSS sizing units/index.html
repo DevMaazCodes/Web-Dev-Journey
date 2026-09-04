@@ -15,23 +15,32 @@
             /*width: 110px;
             height: 90px;*/
             color: blueviolet;
-            width: 100vw;
-            height:100vh;
+            width: 12vw;
+            height:11vh;
             border:3px solid red;
             font-size: 18px;
         }
         .test p{
             /*.test p inherits the properties of .test we gave above (it's direct parent), em means the multiple of the quantity above like font size is 18 above, so 1.5em here means 1.5*18 i.e 27*/
             font-size:1.5em;
-            /*If we want .test to not inherit its parent property but we want it to be a multiple of the root element such as html we will use rem, html base font size is 16px so we can 1.5rem font size to make it 1.5*16 i.e 24*/
+            /*If we want .test to not inherit its parent property but we want it to be a multiple of the root element such as html we will use rem, html base font size is 16px so we can 1.5rem font size to make it 1.5*16 i.e 24. We can also change root size by using styling under html tag*/
             font-size:1.5rem;
 
+        }
+        #ol{
+            margin: 120px;
+            background-color: aqua;
+            width: 80vmin; /*vmin unit means we take the smaller one between width and height for the SPECIFIC device, for example this width in my laptop would be 80vh i.e 80% of height because height<width for laptop but for mobile it would be 80vw because in mobile width is samller than height, similarly there's a vmax which takes the larger one between width and height for the device*/ 
+            height: 80vmax; /*80 percent of the max between height and width*/
         }
     </style>
 </head>
 <body>
     <div class="test">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores dignissimos, animi corporis, itaque earum placeat vitae maxime dicta atque quos voluptates nesciunt!
+        <p>Lorem ipsum dolor sit amet consectetur.
+        </p>
+        <p class="cont" id="ol">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit recusandae quasi facilis?
         </p>
         
     </div>
