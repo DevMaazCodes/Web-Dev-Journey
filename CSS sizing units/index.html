@@ -21,8 +21,11 @@
             font-size: 18px;
         }
         .test p{
-            /*.test p inherits the properties of .test we gave above, em means the multiple of the quantity above like font size is 18 above, so 1.5em here means 1.5*18 i.e 27*/
+            /*.test p inherits the properties of .test we gave above (it's direct parent), em means the multiple of the quantity above like font size is 18 above, so 1.5em here means 1.5*18 i.e 27*/
             font-size:1.5em;
+            /*If we want .test to not inherit its parent property but we want it to be a multiple of the root element such as html we will use rem, html base font size is 16px so we can 1.5rem font size to make it 1.5*16 i.e 24*/
+            font-size:1.5rem;
+
         }
     </style>
 </head>
