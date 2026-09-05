@@ -31,7 +31,8 @@
             margin: 120px;
             background-color: aqua;
             width: 80vmin; /*vmin unit means we take the smaller one between width and height for the SPECIFIC device, for example this width in my laptop would be 80vh i.e 80% of height because height<width for laptop but for mobile it would be 80vw because in mobile width is samller than height, similarly there's a vmax which takes the larger one between width and height for the device*/ 
-            height: 80vmax; /*80 percent of the max between height and width*/
+            /*height: 80vmax; 80 percent of the max between height and width*/
+            min-height: 80vh; /*min-height sets a minimum height limit on the element making orientation easier, though there's no max limit until  we set a max-height value, similarly theres min width and max-width*/
         }
     </style>
 </head>
@@ -40,8 +41,9 @@
         <p>Lorem ipsum dolor sit amet consectetur.
         </p>
         <p class="cont" id="ol">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit recusandae quasi facilis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit recusandae quasi facilis? lorem566
         </p>
+        <p class="test2">Container</p>
         
     </div>
     
