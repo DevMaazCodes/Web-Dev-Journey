@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties in CSS</title>
+    <meta name="description" content="We will be learning different display properties">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            /* display: inline; this makes the div an inline element but it will not allow any changes to width and won't add top padding and margin */
+            display:inline-block; /*This removes the restriction of not adding top padding and margins also allows to add width while making it inline as well*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        It is a box element by default
+    </div>
+</body>
+</html>
