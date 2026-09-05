@@ -19,6 +19,7 @@
             height:11vh;
             border:3px solid red;
             font-size: 18px;
+            box-sizing: border-box;
         }
         .test p{
             /*.test p inherits the properties of .test we gave above (it's direct parent), em means the multiple of the quantity above like font size is 18 above, so 1.5em here means 1.5*18 i.e 27*/
@@ -34,17 +35,31 @@
             /*height: 80vmax; 80 percent of the max between height and width*/
             min-height: 80vh; /*min-height sets a minimum height limit on the element making orientation easier, though there's no max limit until  we set a max-height value, similarly theres min width and max-width*/
         }
+        .test3{
+            background-color:aqua;  
+            color: blueviolet;
+            width: 50%; /*The percentage unit is literal percentage of the parent element property like here test3 width is literally half the width of it's parent that is the div.test*/
+            height:11vh;
+            border:3px solid red;
+            box-sizing:border-box;
+            font-size: 18px;
+            
+        }
     </style>
 </head>
 <body>
     <div class="test">
+         <p class="test3">
+            Hi am half the width of my parent div
+        </p>
+        
         <p>Lorem ipsum dolor sit amet consectetur.
         </p>
         <p class="cont" id="ol">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit recusandae quasi facilis? lorem566
         </p>
         <p class="test2">Container</p>
-        
+       
     </div>
     
 </body>
