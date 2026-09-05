@@ -10,15 +10,32 @@
             margin: 0;
             padding: 0;
         }
-        div{
+        .first{
             /* display: inline; this makes the div an inline element but it will not allow any changes to width and won't add top padding and margin */
             display:inline-block; /*This removes the restriction of not adding top padding and margins also allows to add width while making it inline as well*/
+            border: 2px solid red;
+            margin: 23px;
+            padding: 12px;
+            width: 360px;
+            visibility: hidden; /*This hides the content but doesn't remove the space it has*/
+            /*display:none; This hides the content and remove the space it has*/
+        }
+        .second{
+            display:inline-block;
+            border: 2px solid red;
+            margin: 23px;
+            padding: 12px;
+            width: 360px;
+            
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="first">
         It is a box element by default
+    </div>
+    <div class="second">
+        It is another div
     </div>
 </body>
 </html>
