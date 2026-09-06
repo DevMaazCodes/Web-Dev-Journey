@@ -1,0 +1,9 @@
+nav ul li{
+    list-style:circle; 
+    /* list style color determines the marker type like here the circle makes the marker a circle */
+    background-color: aqua;
+    border:2px solid black;
+    list-style-position:inside;
+    /* List style position makes the marker being included inside the main principal element making styling them simple like border and bg will be applied for marker too*/
+
+}
