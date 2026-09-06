@@ -12,12 +12,12 @@
             height: 12vh;
             /* overflow:hidden; This hides the overflow but the hidden content can be accessed programmatically by using scroll properties in JS */
             /* overflow:scroll; This gives a scroll bar regardless there is an overflow or not */
-            overflow: auto;
-            /* This auto value gives a scroll bar ONLY IF there is an overflow  */
+            /* overflow: auto;  This auto value gives a scroll bar ONLY IF there is an overflow  */
             /* overflow:clip; This is similar to hidden value visually but the invisible content can't be accessed by using any program function like scroll */
-            /* white-space:nowrap; 
-             This makes the text take no verical space and only go horizontally and then overflow instead of going vertical-align 
+            /* white-space:nowrap; This makes the text take no verical space and only go horizontally and then overflow instead of going vertical-align 
             text-overflow:ellipsis; We can combine text-overflow with white space nowrap and overflow value hidden/clip to make perfect ellipsis without any scroll feature*/
+            overflow: auto auto; 
+            /* We can individually handle the x overflow and y overflow like this, the first value is x and second is y */
         }
     </style>
 </head>
