@@ -5,5 +5,10 @@ nav ul li{
     border:2px solid black;
     list-style-position:inside;
     /* List style position makes the marker being included inside the main principal element making styling them simple like border and bg will be applied for marker too*/
+    /* list-style-image: url(https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?cs=srgb&dl=cascade-clouds-cool-wallpaper-210186.jpg&fm=jpg) ; */
+     /* We can use list-style-image to use image instead of a marker */
+     list-style-type:"(-)📈🚀✅";
+     /* we can use style type to put ANYTHING as marker */
+
 
 }
