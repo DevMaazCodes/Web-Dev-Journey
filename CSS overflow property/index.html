@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS overflow properties</title>
+    <style>
+        div {
+            border: 2px solid red;
+            width: 40vw;
+            height: 12vh;
+            /* overflow:hidden; This hides the overflow but the hidden content can be accessed programmatically by using scroll properties in JS */
+            /* overflow:scroll; This gives a scroll bar regardless there is an overflow or not */
+            overflow: auto;
+            /* This auto value gives a scroll bar ONLY IF there is an overflow  */
+            /* overflow:clip; This is similar to hidden value visually but the invisible content can't be accessed by using any program function like scroll */
+            /* white-space:nowrap; 
+             This makes the text take no verical space and only go horizontally and then overflow instead of going vertical-align 
+            text-overflow:ellipsis; We can combine text-overflow with white space nowrap and overflow value hidden/clip to make perfect ellipsis without any scroll feature*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit dicta asperiores ut corrupti sit, earum quos, ab
+        distinctio quaerat minima dolorum non maxime iure beatae eligendi deserunt amet sequi assumenda. Et rem aliquid,
+        adipisci qui tenetur totam recusandae possimus sapiente obcaecati omnis laudantium commodi nemo, nisi dolore
+        praesentium voluptatum perferendis porro ipsum hic rerum quis eius quibusdam quaerat aperiam! Culpa ipsum
+        deleniti veritatis excepturi dolore quas labore dignissimos neque quaerat quasi. Numquam consequuntur voluptate
+        amet qui asperiores hic.
+    </div>
+</body>
+
+</html>
