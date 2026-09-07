@@ -21,6 +21,10 @@
         }
 
         .box1 {
+            position: sticky;
+            /* Position sticky is a hybrid between 'relative' and 'fixed' .
+            It allows an element to become "stuck" to the top or bottom of its container when scrolling, but it behaves like relative positioning within the container until it reaches a specified offset. */
+            top:0px; /*This makes it stick to the top*/
             background-color: blue;
         }
 
@@ -37,9 +41,9 @@
         }
 
         .box3 {
-            position:fixed;
+            position: fixed;
             /* making the position fixed makes the element fixed to the user screen to the horizontal and vertical values given to out element position  */
-            top:79vh;
+            top: 79vh;
             background-color: aqua;
         }
 
@@ -55,7 +59,7 @@
             margin: 34px;
             padding: 43px;
             border: 2px solid black;
-            position: absolute;
+            position: absolute; /*With position there are 3 other proper*/
             height: 110vh;
         }
     </style>
