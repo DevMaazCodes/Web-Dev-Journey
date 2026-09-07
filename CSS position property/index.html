@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 4px solid red;
+            width: 80vw;
+            height: 133px;
+            margin: 3px;
+            padding: 3px;
+            /* By default the position property value is static which means we can't use top left right like properties */
+        }
+
+        .box1 {
+            background-color: blue;
+        }
+
+        .box2 {
+            position: relative;
+            /*Making the position relative let us use the top and bottom properties relative to the original position of the element*/
+            top: 89px;
+            /*Using top to move vertically, negative for above and positive for downwards*/
+            left: 32px;
+            /* using left to move left  */
+            z-index: -1;
+            /* using z index to adjsut what color come above */
+            background-color: yellow;
+        }
+
+        .box3 {
+            position:fixed;
+            /* making the position fixed makes the element fixed to the user screen to the horizontal and vertical values given to out element position  */
+            top:79vh;
+            background-color: aqua;
+        }
+
+        .box4 {
+            position: absolute;
+            /* setting the position absolute means it would be take the top left right bottom affect in relation to the nearest POSITIONED ancestor, IF THERE'S NO ANCESTOR IT WOULD LINE ITSELF FROM HTML, like here it is relative to the parent div */
+            left: 8px;
+            top: 69px;
+            background-color: azure;
+        }
+
+        .parent {
+            margin: 34px;
+            padding: 43px;
+            border: 2px solid black;
+            position: absolute;
+            height: 110vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
