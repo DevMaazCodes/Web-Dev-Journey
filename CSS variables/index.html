@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS variables</title>
+    <style>
+        :root {
+            --c: rgb(184, 99, 99);
+            /* we declared a variable c, to declare we used -- as prefix and if we declared it under :root it would act as a global variable meaning all the selectors will have access to it, this is helpful if we need to use the same property and value multiple times in our code */
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        ul li:first-child{
+            color:var(--c, red); /*If our var c isn't found then red will be applied, if we change c under root it will also change here*/
+        }
+        ul li{
+            --c:blue;
+            color:var(--c)
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
 </body>
+
 </html>
