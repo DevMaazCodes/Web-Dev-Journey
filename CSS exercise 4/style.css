@@ -1,3 +1,9 @@
+:root{
+  --c: rgb(78, 40, 203);  
+}
+body{
+    margin: 344px;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -8,4 +14,9 @@
 }
 .nav ul li{
     padding: 10px;
+    color: var(--c, blue);
+}
+.nav{
+    display: inline-block;
+    border:2px solid black;
 }
