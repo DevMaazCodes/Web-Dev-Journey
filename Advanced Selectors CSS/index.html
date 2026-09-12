@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selectors in CSS</title>
+    <style>
+        .c1,
+        .c2,
+        .c3 {
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+        /*Using comma to make the selector like c1 OR c2 OR c3, without comma on elements having c1,c2 and c3 all will have an effect of the style*/
+        
+        /* div p:nth-child(3){
+        color:blue; we can use nth child property to target the nth child for the style
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolores sunt id quibusdam
+            laboriosam tenetur esse odit debitis amet distinctio? Eius beatae molestias, mollitia natus est aspernatur
+            asperiores officia at architecto voluptatem quibusdam blanditiis! Repellat provident dolor maiores harum
+            exercitationem quam pariatur nisi animi ullam voluptas, accusamus dolorem corrupti excepturi eos, sapiente
+            aspernatur velit? Odit dolorum laborum expedita praesentium, ab consectetur, deleniti pariatur temporibus
+            aliquid ipsum commodi quisquam quos quidem nobis sed animi minus at iusto possimus enim eveniet distinctio
+            tempora! Excepturi, soluta laudantium iusto tempora consectetur porro. Hic cupiditate dolorem molestias odit
+            natus esse atque aut quidem laudantium nesciunt, perspiciatis temporibus doloremque soluta at.</p>
+        <p class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum reprehenderit unde animi
+            nihil, totam maiores quidem voluptas a. Corporis reiciendis sapiente dicta molestiae soluta laborum
+            accusantium, necessitatibus quibusdam autem, magni a nobis.</p>
+        <p class="c3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio voluptas delectus
+            aspernatur praesentium dolore odit quidem. Eveniet, beatae nesciunt, ea iste asperiores nemo harum quisquam
+            in omnis voluptas quos animi maxime rerum? Sed, ut dicta. Magnam architecto doloribus ipsa fugit? Impedit a
+            enim fugit aperiam, illo exercitationem et assumenda velit. Veritatis molestias mollitia esse nobis
+            perferendis alias exercitationem quia adipisci magnam dolorem impedit eius repudiandae, beatae, temporibus
+            cumque.</p>
+    </div>
+</body>
+
+</html>
