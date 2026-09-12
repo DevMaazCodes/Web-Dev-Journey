@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position:sticky;
+    top: 0px;
+}
+header ul{
+    display:flex;
+    color:lightcyan;
+    background-color: rgb(205, 91, 110);
+}
+header ul li{
+    list-style:none;
+    margin: 14px;
+}
+li:hover{
+    color:blue;
+}
+.boxes{
+    border:2px solid black;
+    height: 100vh;
+    margin: 0.5vw;
+    background-color: green;
+}
+.box1,.box2{
+    display: inline-block;
+    margin: 20vh 9vw;
+    height: 60vh;
+    width: 30vw;
+    border:2px solid black;
+}
+.box1{
+    background-color:blue;
+}
+.box2{
+    background-color: pink;
+}
+.content {
+    text-align: center;
+    margin-top:7vh;
+}
+.content span{
+border: 2px solid gray;
+border-radius: 2vh;
+padding:2vh;
+font-size:22px;
+}
+footer{
+    margin-top:7vh;
+}
+footer div{
+    text-align: center;
+    background-color: rgb(195, 188, 190);
+    font-size: 22px;
+}
+.logo{
+    height:10vh;
+    margin: 0 -1.9vw;
+    position:fixed;
+    top:90vh;
+    left:96vw;
+}
