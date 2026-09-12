@@ -25,6 +25,16 @@
          .container::before{
             content: "This is a dynamically added element in the div container using CSS ::before, since its before it will be added before element we also have an after selector as well";
          }
+         div p::first-letter{
+            color:gold;
+            font-size: 100px;
+         } /*We can target the first letter using the pseudo-selector by using :: this selector sign*/
+         ::selection{
+            color:aquamarine;
+            background-color: darkred;
+         } /*we can change the styling of selecting text from standard blue to anything we want using ::selection */
+
+         /*In short we can select anything using the selector ::*/
     </style>
 </head>
 
