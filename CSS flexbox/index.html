@@ -7,8 +7,12 @@
     <meta name="description" content="In this webpage i will be learning CSS flexbox">
     <style>
         .container{
-            display:flex; /*Using flex display to use flexbox  properties*/
-            
+            display:flex; /*Using flex display to use flexbox  properties and we use it on the parent container where items are located*/
+            height: 80vh;
+            border: 2px solid black;
+            justify-content: center; /*Using justify content to align items horizontally*/
+            align-items:center; /*Using align-items to align items vertically*/
+            flex-direction: row-reverse; /*We can use flex direction to set in which direction items will start from row is by default i.e left to right, we also have coloumn and reverses of row and coloumn*/
         } 
         .item{
             background-color: rgb(114, 168, 168);
@@ -21,18 +25,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
     </div>
 </body>
 </html>
