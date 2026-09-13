@@ -15,21 +15,31 @@
             flex-direction: row; /*We can use flex direction to set in which direction items will start from row is by default i.e left to right, we also have coloumn and reverses of row and coloumn*/
             flex-wrap:wrap; /*This makes the overflow content to fall in the next line*/
             align-content:center; /*Centering for multiple lines*/
+            gap:20px 10px; /*The gap property gives gap between items in the container, first value is row-gap aka vertical gap and second is coloumn-gap aka horizontal gap*/
         } 
         .item{
             background-color: rgb(114, 168, 168);
             border:2px solid black;
-            margin: 12px 10px;
+            /* margin: 12px 10px; */
             height: 15px;
             width: 15px;
+        }
+        .item1{
+            order: 2; /*Order is an element property when container has display flex, by default the order of an item is 0, the higher the order the later it will come*/
+            flex-grow: 1; /*The more the flex grow value the more it will grow, the flex-grow property causes the item to take more space i.e grow when there's space leftover, the value is useful when it's sibling items also grow, the higher the value the more space it will take compared to sibling. By default the value is 0 which means te item wont grow*/
+        }
+        .item3{
+            order:-1; /*Item 3 will come at first as rest has order 0*/
+            flex-shrink: 0; /*Flex shrink makes the item shrink when space is constricted by default all items shrink proportionally as all have value 1, value 0 makes it rigid and it doesnt shrink, the higher the value the more it will shrink relative to its siblings*/
+
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
         <div class="item">6</div>
