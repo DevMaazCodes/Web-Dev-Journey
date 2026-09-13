@@ -14,7 +14,7 @@
             /*align-items:center; /*Using align-items to align items vertically when we have only only one line, for multiple lines we use alignn content*/
             flex-direction: row; /*We can use flex direction to set in which direction items will start from row is by default i.e left to right, we also have coloumn and reverses of row and coloumn*/
             flex-wrap:wrap; /*This makes the overflow content to fall in the next line*/
-            align-content:center; /*Centering for multiple lines*/
+            align-items:center; /*Centering for multiple lines*/
             gap:20px 10px; /*The gap property gives gap between items in the container, first value is row-gap aka vertical gap and second is coloumn-gap aka horizontal gap*/
         } 
         .item{
@@ -27,6 +27,7 @@
         .item1{
             order: 2; /*Order is an element property when container has display flex, by default the order of an item is 0, the higher the order the later it will come*/
             flex-grow: 1; /*The more the flex grow value the more it will grow, the flex-grow property causes the item to take more space i.e grow when there's space leftover, the value is useful when it's sibling items also grow, the higher the value the more space it will take compared to sibling. By default the value is 0 which means te item wont grow*/
+            align-self: flex-end; /*self align is used to align a single element/item in a flex box so it is an item property while align items/content are container properties and we cant use align content if we want to use align self as the align content overwrites the cross axis alignment of align self*/
         }
         .item3{
             order:-1; /*Item 3 will come at first as rest has order 0*/
@@ -74,39 +75,6 @@
         <div class="item">5</div>
         <div class="item">6</div>
         <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
