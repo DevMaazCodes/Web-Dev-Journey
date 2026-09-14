@@ -9,17 +9,18 @@
     <style>
         .container {
             border: 2px solid maroon;
-            width:300px;
+   
             height: 80vh;
             display: grid;
             /*We use display grid to use grid properties*/
             grid-template-columns: [first] 1fr [doosra] 2fr;
             /*grid-template-coloumn let us set the number and size/width of coloumns, we can also set the name as done above inside square brackets of our columns, the fr unit means fraction 1fr means 1 fraction of total 2fr means 2 fractions, the more fraction we use for units the lesser one fr becomes*/
-            grid-template-rows: [row1] 100px [doosri-row] 100px [row-3] 100px;
-            /*grid-template-row let us set the number and size/height of rows, also we can name the like i did in square brackets*/
+            grid-template-rows: [row1] minmax(100px, 1fr) [doosri-row] 100px [row-3] 100px;
+            /*grid-template-row let us set the number and size/height of rows, also we can name the like i did in square brackets, the minmax function helps us set the min and max values like i did above*/
             gap: 100px 90px ; /*We can use the gap property to set row gap followed by column gap, we can target individual gap using row-gap and column-gap*/
             justify-items: center;
             align-items:center; /*Using align items and justify-items property to center each item in its own cell, we use it for other values like end , start etc.. as well*/
+            grid-template-columns: repeat(5, 1fr); /*We can repeat function to repeat 1fr 5 times this saves us time and keep the code clean*/
         }
 
         .item {
@@ -34,10 +35,10 @@
             /*We can use grid-row and grid-column properties lo allocate the grid space to an item, the value goes like start/end the numbers are line numbers*/
         }
 
-        .item4 {
-            grid-row: 2/3;
-            grid-column: 2/3;
-        }
+        .item1{
+            align-self: start;
+            justify-self: start; /*Like flexbox we can use align self to adjust position of a single item cell*/
+        } 
     </style>
 </head>
 
