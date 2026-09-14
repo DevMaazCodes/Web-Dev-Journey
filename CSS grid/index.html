@@ -9,12 +9,17 @@
     <style>
         .container {
             border: 2px solid maroon;
+            width:300px;
+            height: 80vh;
             display: grid;
             /*We use display grid to use grid properties*/
-            grid-template-columns: [first] 120px [doosra] 90px;
-            /*grid-template-coloumn let us set the number and size/width of coloumns, we can also set the name as done above inside square brackets of our columns*/
+            grid-template-columns: [first] 1fr [doosra] 2fr;
+            /*grid-template-coloumn let us set the number and size/width of coloumns, we can also set the name as done above inside square brackets of our columns, the fr unit means fraction 1fr means 1 fraction of total 2fr means 2 fractions, the more fraction we use for units the lesser one fr becomes*/
             grid-template-rows: [row1] 100px [doosri-row] 100px [row-3] 100px;
             /*grid-template-row let us set the number and size/height of rows, also we can name the like i did in square brackets*/
+            gap: 100px 90px ; /*We can use the gap property to set row gap followed by column gap, we can target individual gap using row-gap and column-gap*/
+            justify-items: center;
+            align-items:center; /*Using align items and justify-items property to center each item in its own cell, we use it for other values like end , start etc.. as well*/
         }
 
         .item {
