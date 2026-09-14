@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <meta name="description" content="In this video we will learn about CSS grid and its properties">
+    <style>
+        .container{
+            border: 2px solid maroon;
+            display: grid; /*We use display grid to use grid properties*/
+            grid-template-columns: 120px 90px; /*grid-template-coloumn let us set the number and size of coloumns*/
+        }
+        .item{
+            border: 2px solid navajowhite;
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
