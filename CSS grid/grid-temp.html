@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using grid-template-area</title>
+    <style>
+        .container {
+            border: 2px solid maroon;
+            height: 80vh;
+            display: grid;
+            /*We use display grid to use grid properties*/
+            grid-template-areas: "nav nav nav"
+                                 "side main main"
+                                 "footer footer footer"; /*We can use grid template areas to create literal layouts for websites*/
+        }
+        </style>
+</head>
+<body>
+     <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+</html>
