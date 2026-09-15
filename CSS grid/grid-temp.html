@@ -7,7 +7,6 @@
     <style>
         .container {
             border: 2px solid maroon;
-            height: 80vh;
             display: grid;
             /*We use display grid to use grid properties*/
             grid-template-areas: "nav nav nav"
@@ -20,6 +19,15 @@
         }
         .item1{
             grid-area:nav; /*Use grid-area to assign the place/area to an item*/
+        }
+        .item2{
+            grid-area: side;
+        }
+        .item3{
+            grid-area:main;
+        }
+        .item4{
+            grid-area:footer;
         }
         </style>
 </head>
