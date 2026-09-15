@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.chatbox{
+    height: 22px;
+    width: 22px;
+}
