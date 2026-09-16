@@ -19,6 +19,8 @@
             transform: skew(20deg); /*We use skew function to strecth the corners of the item, we can skew in x axis or y axis or both but not in z axis */
             transform: translate(100%,100%); /*We can use translate fucntion to move the item in y x or z direction, other than px unit we have a % unit which is relative to the dimensions of the item*/
             /*To use multiple transform functions at one item we can simply seperate them with a space and it would be used, also the angles/values in the functions can be negative too*/
+            transform:rotate(0.255turn);
+            transform-origin: 69% 69%; /*We can set the origin to which the rotation would occur in this way the percentages are relative to the dimensions of box and the values are x and y respectively*/
         }
         .container{
             border: 2px solid brown;
