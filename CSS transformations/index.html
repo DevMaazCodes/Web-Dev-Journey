@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transform property</title>
+    <style>
+        .box{
+            border:2px solid black;
+            height: 59px;
+            width: 59px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform:rotate(0.5turn); /*rotate value is used to rotate the item by a certain degree or another unit we have is turn, the values of turn are relative to one turn that is 360deg*/
+        }
+        .container{
+            border: 2px solid brown;
+            height: 80vh;
+            width: 80vW;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
