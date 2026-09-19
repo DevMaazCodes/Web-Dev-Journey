@@ -1,7 +1,6 @@
 header {
     display: flex;
-    list-style: none;
-    justify-content: center;
+    justify-content: space-around;
     position: sticky;
     top: 0px;
 }
@@ -9,7 +8,7 @@ header {
 .nav {
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
     gap: 22px;
 }
 
@@ -18,18 +17,15 @@ header {
     width: 22px;
 }
 
-.logo {
-    margin-right: 40vw;
-}
 
-li {
-    display: inline-flex;
+header li {
+    display: flex;
     align-items: center;
     text-decoration: none;
     color: #333333;
 }
 
-li::after {
+header li::after {
     content: " ";
     width: 0;
     height: 0;
@@ -42,31 +38,22 @@ li::after {
 
 .grid {
     height:80vh;
+    max-width:50vw;
     display: grid;
-    margin-top: 15vh;
-    grid-template-areas: "lan1 lan2 lan3"
-                         "lan4 lan5 lan6"
-                         "lan7 lan8 lan9";
+    margin:auto;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;      
     align-items: center; 
     justify-content: center; 
     gap: 1vw;
     align-content: center;              
 }
-@media screen and (orientation: portrait){
+@media screen and (max-width:700px){
     .grid {
-    height:80vh;
     display: grid;
     margin-top: 15vh;
-    grid-template-areas: "lan1"
-                          "lan3"
-                          "lan4"
-                          "lan5"
-                          "lan6"
-                          "lan7"
-                          "lan8"
-                          "lan9"
-                          "lan10";
+    grid-template-columns: 1fr;
     justify-items: center;      
     align-items: center; 
     justify-content: center; 
@@ -98,8 +85,7 @@ h4{
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(46, 219, 250);
-    height: 6vh;
-    width: 10vw;
+    padding: 12px;
     display: flex;
     align-self: center;
     justify-self:center ;
