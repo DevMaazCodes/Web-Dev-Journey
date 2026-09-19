@@ -53,6 +53,27 @@ li::after {
     gap: 1vw;
     align-content: center;              
 }
+@media screen and (orientation: portrait){
+    .grid {
+    height:80vh;
+    display: grid;
+    margin-top: 15vh;
+    grid-template-areas: "lan1"
+                          "lan3"
+                          "lan4"
+                          "lan5"
+                          "lan6"
+                          "lan7"
+                          "lan8"
+                          "lan9"
+                          "lan10";
+    justify-items: center;      
+    align-items: center; 
+    justify-content: center; 
+    gap: 1vw;
+    align-content: center;              
+}
+}
 
 .item {
     border: 2px transparent black;
@@ -70,7 +91,7 @@ h4{
     padding: 0;
     font-weight: 550;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 .download{
     margin: 0;
@@ -87,4 +108,7 @@ h4{
     border: transparent;
     border-radius: 12px;
     text-decoration: none;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
 }
