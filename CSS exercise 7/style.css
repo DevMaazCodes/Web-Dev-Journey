@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 header {
     display: flex;
     justify-content: space-around;
@@ -9,6 +13,7 @@ header {
     display: flex;
     list-style: none;
     justify-content: space-around;
+    align-items: center;
     gap: 22px;
 }
 
@@ -37,11 +42,10 @@ header li::after {
 }
 
 .grid {
-    height:80vh;
     max-width:50vw;
     display: grid;
     margin:auto;
-    margin-top: 100px;
+    margin-top: 11vh;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;      
     align-items: center; 
@@ -49,11 +53,14 @@ header li::after {
     gap: 1vw;
     align-content: center;              
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:950px){
     .grid {
+    max-width:50vw;
     display: grid;
-    margin-top: 15vh;
+    margin:auto;
+    margin-top: 11vh;
     grid-template-columns: 1fr;
+    overflow:scroll;
     justify-items: center;      
     align-items: center; 
     justify-content: center; 
@@ -65,8 +72,10 @@ header li::after {
 .item {
     border: 2px transparent black;
     background-color: #cfcfcf39;
-    width:20vw;
-    height:23vh;
+    padding-bottom:6vh;
+    padding-top:6vh;
+    padding-left:6vw;
+    padding-right:6vw;
     text-align: center;
     display: flex;
     flex-direction: column;
