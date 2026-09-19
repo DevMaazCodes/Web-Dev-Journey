@@ -2,6 +2,8 @@ header {
     display: flex;
     list-style: none;
     justify-content: center;
+    position: sticky;
+    top: 0px;
 }
 
 .nav {
@@ -41,19 +43,48 @@ li::after {
 .grid {
     height:80vh;
     display: grid;
+    margin-top: 15vh;
     grid-template-areas: "lan1 lan2 lan3"
                          "lan4 lan5 lan6"
                          "lan7 lan8 lan9";
     justify-items: center;      
     align-items: center; 
     justify-content: center; 
-    gap: 2vw;
+    gap: 1vw;
     align-content: center;              
 }
 
 .item {
-    border: 2px solid black;
+    border: 2px transparent black;
+    background-color: #cfcfcf39;
     width:20vw;
-    display: grid;
+    height:23vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2vw;
+}
+h4{
+    margin: 0;
+    padding: 0;
+    font-weight: 550;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.download{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(46, 219, 250);
+    height: 6vh;
+    width: 10vw;
+    display: flex;
+    align-self: center;
+    justify-self:center ;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    border-radius: 12px;
+    text-decoration: none;
 }
