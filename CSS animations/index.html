@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+    <style>
+        .box{
+            height: 120px;
+            width: 120px;
+            background-color: aqua;
+            
+        }
+        .container{
+            height: 500px;
+            width: 500px;
+            background-color: green;
+        }
+        @keyframes name{ 
+            /*We create animations using @keyframes in plcae of name i can use anything as the identifier of my animations, we use the from and to set how to proceed with the animations*/
+            from{
+
+            }
+            to{
+                transform:translateX(150px) translateY(150px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
