@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition property</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+        }
+        .box{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            transform: translateX(20%) translateY(30%);
+            /*When the tranformed is applied the box translates in a very sudden motion to make it a smooth transition we will use the transition property and other transition related properties.*/
+            transition-property: transform; /*We use transition-property to select on which property we want to use the transition*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
