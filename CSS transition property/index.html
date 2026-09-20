@@ -16,10 +16,13 @@
             width: 50px;
             transform: translateX(20%) translateY(30%);
             /*When the tranformed is applied the box translates in a very sudden motion to make it a smooth transition we will use the transition property and other transition related properties.*/
-            transition-property:transform; /*We use transition-property to select on which property we want to use the transition*/
+            transition-property:transform; /*We use transition-property to select on which property we want to use the transition we can choose multiple properties seperated by a comma or even use the all keyword to apply on all the properties*/
             transition-duration:3s; /*How long we need the transition to be*/
-            transition-timing-function: ease-in-out; /*To select the type of transition*/
+            transition-timing-function: ease-in-out; /*To select the type of transition, we can make our own function through the inspect tool in browser*/
             transition-delay: 1s; /*To set the time before the transition is activated*/
+            transition:translate 2s ease-out 1ms; /*We can combine all the four properties in 1, the syntax must stay in the following order (property/ies duration timing-function delay*/
+
+            
         }
     </style>
 </head>
