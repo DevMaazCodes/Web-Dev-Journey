@@ -9,6 +9,15 @@
             height: 120px;
             width: 120px;
             background-color: aqua;
+            animation-name:name;/*We use animation name to set what to do with the item/selector*/
+            animation-duration: 2s; /*Duration means hwo long will be 1 iteration of the animation*/
+            animation-timing-function: ease-in-out; /*Same as transition, to control how the item moves along during the animation*/
+            animation-iteration-count: 3; /*To set how many times the animation will repeat without relaoding*/
+            animation-delay:0ms; /*We use this to set after how long since loading the page the animation will start*/
+            animation-direction: alternate-reverse; /*We can set different different ways to play the animation like reverse makes it from to till from unlike the usual from to.*/
+            animation-play-state: running; /*We can use animation play-state to set the status of our animation when paused the animation would stop at the same point where it was and by unpausing it doesn't restart rather literally gets unpaused and run from the same point where it was*/
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; This is the short hand of animation like we had for transition*/
+            animation: name 1s ease 1s infinite alternate-reverse ;
             
         }
         .container{
