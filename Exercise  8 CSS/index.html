@@ -14,7 +14,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            animation: vertical 2s cubic-bezier(0.21, 0.97, 0.59, 0.95) 2s infinite alternate , horizontal 2s linear 2s infinite alternate;
+            animation: vertical 2s cubic-bezier(0.21, 0.97, 0.59, 0.95) 2s alternate infinite, horizontal 10s linear 2s infinite;
         }
 
         .container {
@@ -26,19 +26,21 @@
 
         @keyframes vertical {
             from {
-                
+                bottom: 0;
             }
 
             to {
-                transform: translateY(-350px);
+                bottom: 100%;
             }
         }
-        @keyframes horizontal {
-            from{
 
+        @keyframes horizontal {
+            from {
+                left: 0;
             }
-            to{
-                transform: translateX(62vw);
+
+            to {
+                left: 100%;
             }
         }
     </style>
