@@ -7,16 +7,19 @@
     <title>CSS object fit and position</title>
     <style>
         .container {
-            height: 488px;
+            height: 400px;
             width: 500px;
             background-color: aquamarine;
             border: 10px solid black;
 
         }
         img{
-            width: 310px;
+            width: 500px;
             height: 400px;
-            object-fit: contain /*cover*/; /*Using the object-fit property with value cover will cut the image and make it fit for the height and width we gave to our image, it has no relation with our container, we can use the contain value if we dont want the image to be cut/cropped but in that case to maintain the aspect ratio the image wont fit the height*/
+            object-fit: contain /*cover*/; /*Using the object-fit property with value cover will cut the image and make it fit for the height and width we gave to our image, it has no relation with our container, we can use the contain value if we dont want the image to be cut/cropped but in that case to maintain the aspect ratio the image wont fit the height, by default the object-fit is set to fill which distorts the img*/
+            object-fit: cover;
+            object-position: top right; /*When we use object-fit cover the image is cropped, we can choose which section to crop using the object-position property, like here the top right part is being shown and other is cropped to maintain aspect ratio*/
+            object-position: 50% 50%x; /*We can also set the position in units like % or px and move our image*/
         }
     </style>
 </head>
