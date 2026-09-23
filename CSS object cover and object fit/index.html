@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object fit and position</title>
+    <style>
+        .container {
+            height: 488px;
+            width: 500px;
+            background-color: aquamarine;
+            border: 10px solid black;
+
+        }
+        img{
+            width: 300px;
+            height: 400px;
+            object-fit: contain /*cover*/; /*Using the object-fit property with value cover will cut the image and make it fit for the height and width we gave to our image, it has no relation with our container, we can use the contain value if we dont want the image to be cut/cropped but in that case to maintain the aspect ratio the image wont fit the height*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://cdnb.artstation.com/p/marketplace/presentation_assets/003/430/265/large/file.jpg?1706950304"
+            alt="image">
+    </div>
+</body>
+
+</html>
