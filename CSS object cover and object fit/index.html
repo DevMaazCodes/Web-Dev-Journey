@@ -9,9 +9,12 @@
         .container {
             height: 400px;
             width: 500px;
+            padding: 10px;
             background-image: url("https://cdnb.artstation.com/p/marketplace/presentation_assets/003/430/265/large/file.jpg?1706950304"); /*Using this we can set an image to the background instead of our default color property*/
             background-position: center center; /*We can use the background position property like the image-position to set what part of our image we want to see in background*/
             border: 10px solid black;
+            background-repeat:no-repeat; /*When we have a small image i.e an image whose dimensions are smaller than the container for background, by default it repeats itself to fill the remaining space by using background-repeat property we can control how it repeats, either in X or Y or no-repeat, by default img repeats in both axis*/
+            background-clip: content-box; /*The background-clip property decides how far the background image goes the default is the border box, but we can have different box models too*/
 
         }
         img{
