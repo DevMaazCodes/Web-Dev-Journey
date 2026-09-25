@@ -3,5 +3,5 @@ This repo will be tracking my Web Development journey starting from zero till co
 # Topics am studying/studied
 - HyperText Markup Langauge (HTML)- Concluded
 - Cascading Style Sheets (CSS)- COncluded
-
+- Figma Basics- Concluded
 
