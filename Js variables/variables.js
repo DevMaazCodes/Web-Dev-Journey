@@ -10,3 +10,12 @@ console.log(a);
     let a=12; //the let keyword allow us to create local variables that are only accessible to the block of code they are present in, if we let a variable globally i.e not in any block we can access it anywhere in the file but if we let inside a block of code we can only access it inside the block it is present in unlike var which can be accessed anywhere in the code no matter where it is declared
     console.log(a);
 }
+//there are 7 primitive data types in js, number string boolean undefined null symbol BigInt
+let o={
+   "object":1,
+   "name": "maaz"
+}  //we can use this syntax to create our own data type i.e an object and store key value pairs in it seperated by commas
+console.log(o);4
+o.object=20;   
+o.branch="cse"; //we can also modify the value of an existing key or create a new key value pair like this
+console.log(o)
