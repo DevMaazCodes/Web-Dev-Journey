@@ -29,3 +29,7 @@ else if(/*condition*/1===4){
 else{
         //will be executed if the "if" block doesn't run
 } //if else if ladder used when multiple conditions to check and based on it we have multiple outputs
+let y=1;
+let z=5;
+let x= y<z ? y+z:y-z; //we can use the ternary operator (?) instead of the usual if-else block the syntax is condition ? (operation to execute if condition is true) : (operation to be executed if condition is false)
+console.log(x);
