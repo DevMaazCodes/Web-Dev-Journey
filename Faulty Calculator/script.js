@@ -1,3 +1,4 @@
+
 const calc = (a, op, c) => {
     let rand = Math.random()
     if (rand < 0.1 && op == "+") {
@@ -28,4 +29,8 @@ const calc = (a, op, c) => {
         console.log("Bad operator")
     }
 }
-calc(1, "+", 5)
+let a,b,c;
+a=Number(prompt("Enter first number"))
+b=prompt("Enter operator")
+c=Number(prompt("Enter second number"))
+calc(a,b,c)
