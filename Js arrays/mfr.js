@@ -13,3 +13,4 @@ console.log(arr.filter ((element)=>{
 console.log(arr.reduce((el1,el2)=>{
     return el1+el2;
 })) //the reduce function has a function inside it with 2 parameters one acting as odd elements and 1 even all the elements undergo an operation and the reduce function gives a final answer which is then printed
+console.log(Array.from("Maaz is a good boy")) //Array.from() converts an iterable object like string to an array
