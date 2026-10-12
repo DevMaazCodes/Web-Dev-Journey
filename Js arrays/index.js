@@ -7,3 +7,9 @@ console.log(arr.toString())//this outputs the array as a string where each eleme
 console.log(arr.join(" and ")) //this can edit the places where comma when converted to toString and add a string instead of ,.
 console.log(arr.pop()) //this prints the popped element from the array i.e 10
 console.log(arr) //.pop() removes the last element i.e index [length-1] from the array so this prints the updated array without 10
+console.log(arr.push("nine")) //this prints the new length of arr after pushing
+console.log(arr) //.push(data) can be used to add a new element of any data type to the array at the very last and it returns the new length of the array
+console.log(arr.shift()) //this prints the element removed from first after shifting
+console.log(arr) //.shift() removes the first element i.e at index 0 from the array,.shift() is like pop but from front
+console.log(arr.unshift("zero")) //this prints the new length after unshifting
+console.log(arr) //.unshift adds a new element at front of the array it's like push but from front
