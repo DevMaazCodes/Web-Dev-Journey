@@ -1,4 +1,4 @@
-let arr=[2,4,5,6,7,10] //i can simply create an array by simply creating a variable using [] and access it via indexing
+let arr=[999,998,997,2,4,5,6,7,10] //i can simply create an array by simply creating a variable using [] and access it via indexing
 console.log(arr[2])
 console.log(arr.length) //like string .length gives me the length of array i.e the number of elements inside it
 arr[0]=0; //since array are mutable unlike immutable strings we can make changes to it using index
@@ -18,4 +18,6 @@ console.log(arr)
 arr2=[2,4,3,1000,2000]
 console.log(arr.concat(1,3,2,5,arr2)) //.concat(item/anotherarray) conacatenates multiple arrays or items and print all items in one array but doesnt change the existing arrays upon concatenation
 console.log(arr)
+arr.sort() //sort() sorts the array in ascending order unless compare function is passed as argument
+console.log(arr)  
 
