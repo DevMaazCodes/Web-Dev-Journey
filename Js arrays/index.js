@@ -20,4 +20,8 @@ console.log(arr.concat(1,3,2,5,arr2)) //.concat(item/anotherarray) conacatenates
 console.log(arr)
 arr.sort() //sort() sorts the array in ascending order unless compare function is passed as argument
 console.log(arr)  
-
+arr.splice(4,2,8,997) //the splice(start,how many to remove, add ,add,add....) removes elements from the start index, we need to specify the number of elements we need to remove from the array or else it removes everything from start index, we can also add some other element by passing an argument after number of elements to remove seperated by comma
+console.log(arr)
+console.log(arr.slice(2,4)) //using .slice(start,end) we can display a particular range of elements from start index to end index, like strings the end is exclusive i.e not included while start is included ofc the original array is unchanged
+arr.reverse();//.reverse() reverses the elements in original array
+console.log(arr) 
