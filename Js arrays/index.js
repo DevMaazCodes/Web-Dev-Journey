@@ -13,3 +13,9 @@ console.log(arr.shift()) //this prints the element removed from first after shif
 console.log(arr) //.shift() removes the first element i.e at index 0 from the array,.shift() is like pop but from front
 console.log(arr.unshift("zero")) //this prints the new length after unshifting
 console.log(arr) //.unshift adds a new element at front of the array it's like push but from front
+delete arr[2] //the delete array[index] deletes the item at index 'index' but the memory space still exists so the length is unchanged and upon printing the place at index 'index' would show empty item
+console.log(arr)
+arr2=[2,4,3,1000,2000]
+console.log(arr.concat(1,3,2,5,arr2)) //.concat(item/anotherarray) conacatenates multiple arrays or items and print all items in one array but doesnt change the existing arrays upon concatenation
+console.log(arr)
+
