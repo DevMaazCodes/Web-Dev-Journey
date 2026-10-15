@@ -5,3 +5,7 @@ x.style.backgroundColor="red";
 console.log(document.querySelectorAll(".box")) //.querySelectorAll("CSS selector") returns a nodelist of all the elements that will be targeted using the given selector, we can access each element using indexing as usual list does
 document.querySelectorAll(".box")[4].style.backgroundColor="yellow"; //selects the 5th box i.e index 4
 document.querySelector(".box").style.textDecoration="underline"; //.querySelector("Selector") is the shorthand for .querySelectorAll(Selector)[0], which means it simply returns the first element being targeted using the given selector
+//to target any nodelist we can use simple foreach loop, for html collection we can't use a foreach loop though we can use forof/classic for
+document.querySelectorAll(".box").forEach(element => {
+    element.style.backgroundColor="aqua";
+});
