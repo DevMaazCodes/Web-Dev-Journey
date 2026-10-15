@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child parent and sibling nodes in js</title>
+    <style>
+        .box {
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid black;
+            height: 60px;
+            width: 60px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- everything under body are a children of the body but child nodes are only the direct children of the body like container is a childnode of body but the boxes are childnodes of container -->
+    <!-- !!important:one thing to note is all the text/whitespaces are also a childnode like when we create a new line that is also a childnode of body, and new lines inside container is a childnode of container -->
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
