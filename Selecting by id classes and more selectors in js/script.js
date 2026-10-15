@@ -9,3 +9,5 @@ document.querySelector(".box").style.textDecoration="underline"; //.querySelecto
 document.querySelectorAll(".box").forEach(element => {
     element.style.backgroundColor="aqua";
 });
+console.log(document.getElementsByTagName("div"))//.getElementsByTagName("tag") returns a HTML collection of all elements with given tag
+console.log(document.getElementsByName("number-box"))//.getElementsByName("name") returns a node list of all elements with given name attribute.
