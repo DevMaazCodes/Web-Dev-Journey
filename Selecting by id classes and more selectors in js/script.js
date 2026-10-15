@@ -11,3 +11,8 @@ document.querySelectorAll(".box").forEach(element => {
 });
 console.log(document.getElementsByTagName("div"))//.getElementsByTagName("tag") returns a HTML collection of all elements with given tag
 console.log(document.getElementsByName("number-box"))//.getElementsByName("name") returns a node list of all elements with given name attribute.
+let y=document.getElementsByName("number-box");
+console.log(y[2].matches("#red-box")) //element.matches("css selector"), if element can be targeted by the css selector the output would be true else false
+console.log(y[0].closest("body")) //.closest(css selector) showcases the closest ancestor that can be targeted by the given selector, if the element itself can be targeted by the selector then the closest function would return the element itself
+let z=document.querySelector(".container")
+console.log(z.contains(y[1])) //if z contains y[1] it would show true, el1.contains(el2) if el2 is a descendant of el1 it would output true else false, but if el1==el2 i.e z.contains(z) the output would be true because one is said to contain itself in js
