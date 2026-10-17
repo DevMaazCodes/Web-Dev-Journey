@@ -20,4 +20,11 @@ document.querySelector(".container").before(newEl) //.before(element to be inser
 document.querySelector(".container").after(newEl) //.after(element to be inserted) inserts a new element after the selected element
 // document.querySelector(".container").replaceWith(newEl) //.replaceWith(element to be inserted) replaces a new element with the selected element
 document.querySelector(".container").insertAdjacentHTML("afterbegin","<div class=box>This is a new text</div>") //when we want to add a new html string we can use insertAdjacentHTML("where to insert i.e beforebegin afterbegin beforeend afterend")
-
+newEl.remove() //we can use .remove() to remove a particular node
+console.log(document.querySelector(".container").classList) //.classList gives the list of classes
+document.querySelector(".container").classList.add("new-class") //.add() after .classList() adds new class 
+document.querySelector(".container").classList.toggle("big") //.toggle("class") if the given class is present it is removed else it is added
+document.querySelector(".container").classList.toggle("big")
+document.querySelector(".container").classList.toggle("big")
+document.querySelector(".container").classList.toggle("big")
+document.querySelector(".container").classList.toggle("big") 
