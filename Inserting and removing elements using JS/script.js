@@ -11,3 +11,12 @@ document.querySelector(".container").setAttribute("style", "display:inline") //.
 console.log(document.querySelector(".container").attributes)//.attributes return a list containing all the attributes of a particular element
 document.querySelector(".container").removeAttribute("style")//we can remove any attribute from an element using .removeAttribute("atr")
 console.log(document.querySelector(".data").dataset) //.dataset gives us a key value pair where key are our custom attributes that are written after data- and value is the value assigned to them
+let newEl=document.createElement("div");
+newEl.setAttribute("class","inserted-el")
+newEl.innerHTML="This is an inserted element"
+document.querySelector(".container").append(newEl); //.append(element to be inserted) inserts a new element to the end of the selected element
+document.querySelector(".container").prepend(newEl) //.prepend(element to be inserted) inserts a new element to the start of the selected element
+document.querySelector(".container").before(newEl) //.before(element to be inserted) inserts a new element before the selected element
+document.querySelector(".container").after(newEl) //.after(element to be inserted) inserts a new element after the selected element
+document.querySelector(".container").replaceWith(newEl) //.replaceWith(element to be inserted) replaces a new element with the selected element
+
