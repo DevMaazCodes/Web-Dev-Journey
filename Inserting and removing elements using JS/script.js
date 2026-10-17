@@ -18,5 +18,6 @@ document.querySelector(".container").append(newEl); //.append(element to be inse
 document.querySelector(".container").prepend(newEl) //.prepend(element to be inserted) inserts a new element to the start of the selected element
 document.querySelector(".container").before(newEl) //.before(element to be inserted) inserts a new element before the selected element
 document.querySelector(".container").after(newEl) //.after(element to be inserted) inserts a new element after the selected element
-document.querySelector(".container").replaceWith(newEl) //.replaceWith(element to be inserted) replaces a new element with the selected element
+// document.querySelector(".container").replaceWith(newEl) //.replaceWith(element to be inserted) replaces a new element with the selected element
+document.querySelector(".container").insertAdjacentHTML("afterbegin","<div class=box>This is a new text</div>") //when we want to add a new html string we can use insertAdjacentHTML("where to insert i.e beforebegin afterbegin beforeend afterend")
 
