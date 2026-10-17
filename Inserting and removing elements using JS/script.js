@@ -1,1 +1,5 @@
 console.log(document.querySelector(".container").innerHTML); //.inner html will show all the html inside the particular selector including new lines and whitespaces
+console.log(document.querySelector(".container").innerText); //.innerText will show all the text inside the particular selector including new lines and whitespace which means it won't show the html tags and other things aside from text.
+console.log(document.querySelector(".container").outerHTML); //.outerHTML will show all the html inside the particular selector including new lines and whitespaces AND will also show the element itself in html
+console.log(document.querySelector(".container").tagName); //tells what type of tag is the given element node
+console.log(document.querySelector(".container").childNodes[0].nodeName); //tells what type of node is the given node, this tells us the type of node including text and comments which can't be done using tagName as it is for elements only
