@@ -1,0 +1,1 @@
+console.log(document.querySelector(".container").innerHTML); //.inner html will show all the html inside the particular selector including new lines and whitespaces
