@@ -7,3 +7,7 @@ document.querySelector(".hidden").hidden=false; //we can manipulate the hidden a
 // document.querySelector(".container").innerHTML="This is inner HTML" we can change the innerHTML like this
 console.log(document.querySelector(".container").hasAttribute("class")) //.hasAttribute returns a boolean value depending on whether the element has the attribute or not
 console.log(document.querySelector(".container").getAttribute("style")) //.getAttribute returns the value the particular attribute has if the attribute doesn't exist null is returned
+document.querySelector(".container").setAttribute("style", "display:inline") //.setAttribute("attribute","value") let us set the value of a particular attribute
+console.log(document.querySelector(".container").attributes)//.attributes return a list containing all the attributes of a particular element
+document.querySelector(".container").removeAttribute("style")//we can remove any attribute from an element using .removeAttribute("atr")
+console.log(document.querySelector(".data").dataset) //.dataset gives us a key value pair where key are our custom attributes that are written after data- and value is the value assigned to them
