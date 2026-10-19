@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color:black;
+}
+.container{
+    min-height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: 30px;
+}
+.title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 450;
+    color:white;
+}
+.card{
+    display: flex;
+}
+.card img{
+    height: 94px;
+    width: 168px;
+    border: transparent;
+    border-radius: 7px;
+}
+.foot{
+    margin-top: 15px;
+    color:#aaaaaa;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.thumbnail{
+    position: relative;
+}
+.thumbnail span{
+    position:absolute;
+    top:77px;
+    left:132px;
+    background-color: black;
+    color: white;
+    border: transparent;
+    border-radius: 4px;
+    padding:0px 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+.card .text{
+    margin-left: 10px;
+}
