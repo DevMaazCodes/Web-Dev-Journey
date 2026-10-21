@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+    <style>
+        .child{
+            border:2px solid red;
+            margin: 20px;
+            padding: 20px;
+        }
+        .childContain{
+            border:2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container{
+            border:2px solid rgb(181, 181, 13);
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childContain">
+            <div class="child">
+                I am the child
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementsByClassName("child")[0].addEventListener("click",(e)=>{
+            alert("child was clicked")
+            e.stopPropagation() //stops the propagation
+        })
+        document.getElementsByClassName("childContain")[0].addEventListener("click",(e)=>{
+            alert("childContainer was clicked")
+        })
+        document.getElementsByClassName("container")[0].addEventListener("click",(e)=>{
+            alert("container was clicked")
+        }) //when we do this the events bubble because if we click child we technically childCOntainer and container both, so all the eventlisteners get triggered, we can stop firing these events using stoppropagation which means we can prevent event bubbling
+    </script>
+</body>
+</html>
