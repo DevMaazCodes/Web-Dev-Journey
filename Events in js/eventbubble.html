@@ -48,7 +48,7 @@
         document.getElementsByClassName("container")[0].addEventListener("click", (e) => {
             alert("container was clicked")
         }) //when we do this the events bubble because if we click child we technically childCOntainer and container both, so all the eventlisteners get triggered, we can stop firing these events using stoppropagation which means we can prevent event bubbling
-        document.getElementsByClassName("child")[0].removeEventListener("click", (e))
+        // document.getElementsByClassName("child")[0].removeEventListener("click", (e))
     </script>
 </body>
 
