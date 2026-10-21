@@ -8,3 +8,4 @@ setInterval(()=>{
     let y=Math.random();
     document.querySelector(".box").insertAdjacentHTML("beforeend",` ${y} `)
 },(3000)) //setInterval(function,(time in ms)) let us set a function and time in ms and after every time passed the code will execute
+clearInterval(1); //clearInterval(intervalID) let us stop the interval of the particular intervalID found from console.log() of the setInterval as it returns the id of the interval
