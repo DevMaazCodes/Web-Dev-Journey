@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event bubbling</title>
     <style>
-        .child{
-            border:2px solid red;
+        .child {
+            border: 2px solid red;
             margin: 20px;
             padding: 20px;
         }
-        .childContain{
-            border:2px solid black;
+
+        .childContain {
+            border: 2px solid black;
             margin: 20px;
             padding: 20px;
         }
-        .container{
-            border:2px solid rgb(181, 181, 13);
+
+        .container {
+            border: 2px solid rgb(181, 181, 13);
             margin: 20px;
             padding: 20px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="childContain">
@@ -31,16 +35,21 @@
         </div>
     </div>
     <script>
-        document.getElementsByClassName("child")[0].addEventListener("click",(e)=>{
+        function clicks(e) {
             alert("child was clicked")
-            e.stopPropagation() //stops the propagation
+            e.stopPropagation()
+        }
+        document.getElementsByClassName("child")[0].addEventListener("click", (e)=>{
+            clicks(e)
         })
-        document.getElementsByClassName("childContain")[0].addEventListener("click",(e)=>{
+        document.getElementsByClassName("childContain")[0].addEventListener("click", (e) => {
             alert("childContainer was clicked")
         })
-        document.getElementsByClassName("container")[0].addEventListener("click",(e)=>{
+        document.getElementsByClassName("container")[0].addEventListener("click", (e) => {
             alert("container was clicked")
         }) //when we do this the events bubble because if we click child we technically childCOntainer and container both, so all the eventlisteners get triggered, we can stop firing these events using stoppropagation which means we can prevent event bubbling
+        document.getElementsByClassName("child")[0].removeEventListener("click", (e))
     </script>
 </body>
+
 </html>
