@@ -13,3 +13,9 @@ const loadScript=(src,callback)=>{
 } //this is a callback function example, callback fucntions are functions whihc can be run on demand whenever the function task is completed
 loadScript("script.js",callback)
 console.log("I am synchronous guy 2")
+// const LoadScript=()=>{
+//  const calling=()=>{
+//     const called=()=>{
+//     }
+//  }
+// } This is known as callback hell or pyramid of doom which means nesting of callback functions making it difficult to manage. To solve this we use promises
