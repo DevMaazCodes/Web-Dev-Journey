@@ -80,11 +80,17 @@ let prom5= Promise.allSettled([prom1,prom2,prom3])//we pass an array of promises
 prom5.then(value=>{
     console.log(value)
 })
-let prom6=Promise.race([prom1,prom2,prom3]) //we pass an array of promises inside the Promise.race, the first array to settle becomes our promise, its error will be prom6's error and its resolution value will be prom6's value
+let prom6=Promise.race([prom1,prom2,prom3]) //we pass an array of promises inside the Promise.race, the first promise to settle becomes our promise, its error will be prom6's error and its resolution value will be prom6's value
 prom6.then(value=>{
     console.log(value)
 })
 .catch(err=>{
     console.log(err)
 })
-let prom6=Promise.race([prom1,prom2,prom3]) //
+let prom7=Promise.any([prom1,prom2,prom3]) //we pass an array of promises inside the Promise.any, the first promise to FULFILL becomes our prom7, its value will be printed upon using .then and if all promise reject then only .catch will trigger
+prom7.then(value=>{
+    console.log("prom7 "+value)
+})
+.catch(err=>{
+    console.log("prom7 all failed")
+})
