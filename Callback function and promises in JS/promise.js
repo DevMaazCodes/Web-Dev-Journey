@@ -1,6 +1,6 @@
 const prom1= new Promise((resolve,reject)=>{
      let a=Math.random();
-     if(a<0.5){
+     if(a<1){
         resolve("Yayy resolved")
      }
      else{
@@ -33,3 +33,31 @@ prom1
 .catch(err=>{
     console.log(err) //any error/rejection will be caught here
 }) //this is chaining of handlers
+prom1.then(value=>{
+    console.log("Independant 1") 
+})
+prom1.then(value=>{
+    console.log("Independant 2") 
+})
+prom1.then(value=>{
+    console.log("Independant 3") //these 3 are different handlers as they are not chained like above thus they act independently 
+})
+const prom2= new Promise((resolve,reject)=>{
+     let a=Math.random();
+     if(a<1){
+        resolve("Yayy resolved")
+     }
+     else{
+        reject("Shit, rejected")
+     }
+})
+const prom3= new Promise((resolve,reject)=>{
+     let a=Math.random();
+     if(a<1){
+        resolve("Yayy resolved")
+     }
+     else{
+        reject("Shit, rejected")
+     }
+})
+
