@@ -68,7 +68,7 @@ const prom3= new Promise((resolve,reject)=>{
         reject("Shit, rejected 3")
      }
 })
-let prom4 = Promise.all([prom1,prom2,prom3]) //we pass an array of promises inside the Promise.all if all the prom are resolved then only the promises.all will be considered fulfilled if any one of them throws error the .all will also be considered rejected
+let prom4 = Promise.all([prom1,prom2,prom3]) //we pass an array of promises inside the Promise.all if all the prom are resolved then only the promises.all will be considered fulfilled if any one of them throws error the .all will also be considered rejected and ignores all the other results given by successful promises
 prom4
 .then(value=>{
     console.log(value) //prints an array of the returned value of the promises fulfilled if all promises fulfilled
@@ -76,4 +76,7 @@ prom4
 .catch(reason=>{
   console.log(reason) //prints the reason of the rejected promise
 })
-
+let prom5= Promise.allSettled([prom1,prom2,prom3])//we pass an array of promises inside the Promise.allSettled, once all the promises are settled i.e either rejected or fulfilled their status and value/reason will be returned as an array of object to prom5
+prom5.then(value=>{
+    console.log(value)
+})
