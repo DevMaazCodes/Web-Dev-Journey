@@ -1,10 +1,10 @@
 const prom1= new Promise((resolve,reject)=>{
      let a=Math.random();
-     if(a<1){
-        resolve("Yayy resolved")
+     if(a<0.5){
+        resolve("Yayy resolved 1")
      }
      else{
-        reject("Shit, rejected")
+        reject("Shit, rejected 1")
      }
 }) //instead of a callback we can have a promsise, it is a function which returns two types of callbacks, rejected or resolved. Initially the promise is pending, depending on our code either it gets rejected or it gets resolved, no matter what happens the resolved/rejected returns a value/reason which can be used using .then and .catch as done below
 prom1
@@ -35,29 +35,45 @@ prom1
 }) //this is chaining of handlers
 prom1.then(value=>{
     console.log("Independant 1") 
+}) .catch(err=>{
+    console.log(err)
 })
 prom1.then(value=>{
     console.log("Independant 2") 
 })
+.catch(err=>{
+    console.log(err)
+})
 prom1.then(value=>{
     console.log("Independant 3") //these 3 are different handlers as they are not chained like above thus they act independently 
 })
+.catch(err=>{
+    console.log(err)
+})
 const prom2= new Promise((resolve,reject)=>{
      let a=Math.random();
-     if(a<1){
-        resolve("Yayy resolved")
+     if(a<0.5){
+        resolve("Yayy resolved 2")
      }
      else{
-        reject("Shit, rejected")
+        reject("Shit, rejected 2")
      }
 })
 const prom3= new Promise((resolve,reject)=>{
      let a=Math.random();
-     if(a<1){
-        resolve("Yayy resolved")
+     if(a<0.5){
+        resolve("Yayy resolved 3")
      }
      else{
-        reject("Shit, rejected")
+        reject("Shit, rejected 3")
      }
+})
+let prom4 = Promise.all([prom1,prom2,prom3]) //we pass an array of promises inside the Promise.all if all the prom are resolved then only the promises.all will be considered fulfilled if any one of them throws error the .all will also be considered rejected
+prom4
+.then(value=>{
+    console.log(value) //prints an array of the returned value of the promises fulfilled if all promises fulfilled
+})
+.catch(reason=>{
+  console.log(reason) //prints the reason of the rejected promise
 })
 
