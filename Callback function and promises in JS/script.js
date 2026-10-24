@@ -13,8 +13,8 @@ const loadScript=(src,callback)=>{
 } //this is a callback function example, callback fucntions are functions whihc can be run on demand whenever the function task is completed
 loadScript("script.js",callback)
 console.log("I am synchronous guy 2")
-// const LoadScript=()=>{
-//  const calling=()=>{
+// const LoadScript=(src,callback)=>{
+//  const calling=(src,called)=>{
 //     const called=()=>{
 //     }
 //  }
