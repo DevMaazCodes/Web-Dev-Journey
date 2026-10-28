@@ -13,4 +13,20 @@ try{
 catch(err){
     console.log("Shit, its a error") //if error it will caught in catch block
     console.log(err) //this is the error object will shows the details of the error it is a parameter of the catch function
-} //the try catch is the pro way of handling errors
+} //the try catch is the pro way of handling errors though it is synchronous so any error through try catch wont be detected through async errors i.e when the compiler left the code block of try and catch the error wont be caught if an error comes like from setTimeout an error comes but due to the timeout no catch will be executed
+function noError(){
+    let y=12;
+    let z=1;
+    try{
+        console.log(y+z);
+        return null; //we return the function here
+    }
+    catch(err){
+        console.log(err)
+    }
+    finally{
+        console.log("Sum done") //the finally executes regardless of the return and try catch execution if try executes finally stills executes, before returning to main the finally always executes
+    }
+    
+}
+noError()
