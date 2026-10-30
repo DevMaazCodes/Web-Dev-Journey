@@ -38,3 +38,4 @@ class birds extends animal { //we use the extends keyword for using inheritance 
 let b = new birds("Parrot");
 console.log(b)
 birds.auto() //calling static function without the need of objects
+console.log(b instanceof birds) //if we want to check if some object is the part of x class we can use instanceof operator example syntax is obj instanceof x, obj is also inside the parent class of its class 
