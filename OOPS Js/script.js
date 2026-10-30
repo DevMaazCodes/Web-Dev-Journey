@@ -31,6 +31,10 @@ class birds extends animal { //we use the extends keyword for using inheritance 
         console.log("This is a parrot eating")
         super.eats(); //we can also use the super keyword to use the eats function of parent class
     }
+    static auto(){
+        console.log("I need no object creation i can be called from class itself without creating an object like done below")
+    }
 }
 let b = new birds("Parrot");
 console.log(b)
+birds.auto() //calling static function without the need of objects
