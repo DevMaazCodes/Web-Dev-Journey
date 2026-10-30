@@ -19,5 +19,11 @@ class animal{
     }
 } //this is the syntax of creating a class and its related member functions, we use this keyword to assign properties to different objects
 
-let tiger= new animal("Tiger") //this is how we create 
-console.log(tiger)
+let Tiger= new animal("Tiger") //this is how we create 
+console.log(Tiger)
+
+class birds extends animal{ //we use the extends keyword for using inheritance in js the class x extend y means x inherits y's properties
+
+}
+let b=new birds("Parrot");
+console.log(b)
