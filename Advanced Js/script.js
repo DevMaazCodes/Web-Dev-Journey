@@ -1,4 +1,14 @@
-let [x,y]=[5,10,12] //by rhis we can assign x and y the first two values of the array [5,10,12] i.e 5 and 10 respectively this is known as destructing
+let [x,y]=[5,10,12] //by this we can assign x and y the first two values of the array [5,10,12] i.e 5 and 10 respectively this is known as destructing
+let [z, t, ...hi] = [5, 10, 12, 20, 50]; //...identifier assigns the rest of the elements after z and t as an array to the given identifier, like here z=5 t=10 hi=[12,20,50]
+console.log(hi);
+let obj={
+    a:1,
+    b:2,
+    c:3,
+    d:4
+}
+let {a,b}=obj; //this is how we destructure an object, we can choose any key from object and treat them as variable
+console.log(a,b)
 async function sleep() {
     return new Promise ((resolve,reject)=>{
         setTimeout(()=>{
