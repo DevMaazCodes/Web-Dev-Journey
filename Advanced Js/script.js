@@ -22,3 +22,12 @@ async function sleep() {
     let b= await sleep();
     console.log(parameters);
 })("parameters") //the function main is called itself as soon as the script runs because of the IIFE (immediate invoked function expression) feature if js, the syntax is shown above in simple words we enclose the function in () and then add a pair of () after the function and parameters inside it if needed
+function sum(a,b,c){
+    return a+b+c
+}
+let arr=[2,3,4]
+let sum0=sum(arr[0],arr[1],arr[2])
+console.log(sum0)
+let sum1=sum(...arr) //this is same as above we can use ... (spread operator to open any array)
+console.log(sum1)
+let objar={...arr} //assigns the array values to index like 0:2,1:3,2:4
