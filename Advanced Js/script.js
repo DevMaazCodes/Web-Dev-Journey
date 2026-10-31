@@ -1,0 +1,1 @@
+let [x,y]=[5,10,12] //by rhis we can assign x and y the first two values of the array [5,10,12] i.e 5 and 10 respectively this is known as destructing
